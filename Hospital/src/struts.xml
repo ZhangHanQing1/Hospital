@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+   <package name="p" extends="json-default" namespace="/">
+      <action name="Drug_*" class="drugAction" method="{1}">
+         <result name="drugFind">/jsp/DrugFind.jsp</result>
+      </action>
+      <action name="Adjust_*" class="adjustAction" method="{1}">
+         <result name="findPage">/jsp/tiaojiaC.jsp</result>
+      </action>
+      
+      <action name="Chuku_*" class="chukuAction" method="{1}">
+        <result name="chukuC">/jsp/chukuC.jsp</result>
+      </action>
+      
+   </package>	
+</struts>    
